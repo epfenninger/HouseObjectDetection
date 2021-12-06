@@ -1,5 +1,5 @@
 import paho.mqtt.publish as publish
-MQTT_SERVER = "192.168.10.13"  #Write Server IP Address
+MQTT_SERVER = ""  #Write Server IP Address
 MQTT_PATH = "ImageProcessor"
 port=1883
 
