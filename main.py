@@ -1,7 +1,7 @@
 import detector
 import paho.mqtt.client as mqtt
 import paho.mqtt.publish as publish
-MQTT_SERVER = "192.168.10.13"
+MQTT_SERVER = "<MQTT Server Address>"
 MQTT_PATH = "ImageProcessor"
 from PIL import Image
 import io
