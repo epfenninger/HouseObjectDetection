@@ -13,6 +13,7 @@ from time import sleep
 import sys
 
 recent = ''
+#Dataset that you care about
 dataset = ['person','bicycle','truck','motorcycle','car','cat','dog','bear','horse']
 imgList = []
 home = True
