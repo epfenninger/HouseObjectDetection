@@ -75,7 +75,7 @@ def detect(name,num,spacing,multi,acc):
 
   for x in range(num):
     try:
-      r = requests.get('http://192.168.10.6:3300/image/' + name) 
+      r = requests.get('<LocalBIInstallIPAddress:Port>/image/' + name) 
       img = Image.open(io.BytesIO(r.content)).convert('RGB')
       imgList.append(img.copy())
       sleep(float(spacing))
@@ -125,7 +125,7 @@ def handleObjects(name,objects,img):
     message = "The " + name + " Camera spotted a " + message
     print(message)
     if ((name == 'Livingroom' or name == 'Kitchen') and home): 
-      print("we're home, don't wanna see this shit")
+      print("we're home, don't wanna see it")
     else:
       myTelegram.sendMsg(message)
       myTelegram.sendImg(img)
